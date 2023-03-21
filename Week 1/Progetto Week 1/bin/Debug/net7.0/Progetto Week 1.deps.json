@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v7.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v7.0": {
+      "Progetto Week 1/1.0.0": {
+        "runtime": {
+          "Progetto Week 1.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Progetto Week 1/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
