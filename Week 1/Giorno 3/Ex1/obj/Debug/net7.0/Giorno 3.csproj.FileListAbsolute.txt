@@ -1,0 +1,15 @@
+C:\Users\bavba\OneDrive\Documenti\Riccardo\Corso .NET\Week 1\Giorno 3\bin\Debug\net7.0\Giorno 3.exe
+C:\Users\bavba\OneDrive\Documenti\Riccardo\Corso .NET\Week 1\Giorno 3\bin\Debug\net7.0\Giorno 3.deps.json
+C:\Users\bavba\OneDrive\Documenti\Riccardo\Corso .NET\Week 1\Giorno 3\bin\Debug\net7.0\Giorno 3.runtimeconfig.json
+C:\Users\bavba\OneDrive\Documenti\Riccardo\Corso .NET\Week 1\Giorno 3\bin\Debug\net7.0\Giorno 3.dll
+C:\Users\bavba\OneDrive\Documenti\Riccardo\Corso .NET\Week 1\Giorno 3\bin\Debug\net7.0\Giorno 3.pdb
+C:\Users\bavba\OneDrive\Documenti\Riccardo\Corso .NET\Week 1\Giorno 3\obj\Debug\net7.0\Giorno 3.csproj.AssemblyReference.cache
+C:\Users\bavba\OneDrive\Documenti\Riccardo\Corso .NET\Week 1\Giorno 3\obj\Debug\net7.0\Giorno 3.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\bavba\OneDrive\Documenti\Riccardo\Corso .NET\Week 1\Giorno 3\obj\Debug\net7.0\Giorno 3.AssemblyInfoInputs.cache
+C:\Users\bavba\OneDrive\Documenti\Riccardo\Corso .NET\Week 1\Giorno 3\obj\Debug\net7.0\Giorno 3.AssemblyInfo.cs
+C:\Users\bavba\OneDrive\Documenti\Riccardo\Corso .NET\Week 1\Giorno 3\obj\Debug\net7.0\Giorno 3.csproj.CoreCompileInputs.cache
+C:\Users\bavba\OneDrive\Documenti\Riccardo\Corso .NET\Week 1\Giorno 3\obj\Debug\net7.0\Giorno 3.dll
+C:\Users\bavba\OneDrive\Documenti\Riccardo\Corso .NET\Week 1\Giorno 3\obj\Debug\net7.0\refint\Giorno 3.dll
+C:\Users\bavba\OneDrive\Documenti\Riccardo\Corso .NET\Week 1\Giorno 3\obj\Debug\net7.0\Giorno 3.pdb
+C:\Users\bavba\OneDrive\Documenti\Riccardo\Corso .NET\Week 1\Giorno 3\obj\Debug\net7.0\Giorno 3.genruntimeconfig.cache
+C:\Users\bavba\OneDrive\Documenti\Riccardo\Corso .NET\Week 1\Giorno 3\obj\Debug\net7.0\ref\Giorno 3.dll
