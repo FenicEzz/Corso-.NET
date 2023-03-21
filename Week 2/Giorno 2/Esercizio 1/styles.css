@@ -1,0 +1,104 @@
+* {
+    font-family: Tahoma, sans-serif;
+}
+
+body {
+    margin: 0 4em;
+}
+.testo-centrale {
+    text-align: center;
+}
+
+.spaziatura-section {
+    margin-top: 3em ;
+}
+
+article {  
+    line-height: 1.5em;
+}
+
+header {
+    background-color: #e6e6fa;
+    text-align: center;
+    border-bottom: solid 6px #191970;
+}
+
+header h1 {
+    padding-top: .6em;
+    font-size: 1.8em;
+}
+
+header h2 {
+    color: #191970;
+    font-size: 1em;
+}
+
+main {
+    border-left: solid 1px #787878;
+    border-right: solid 1px #787878;
+    padding: 0 1em;
+    margin-top: 2em;
+}
+
+section h2 {
+    margin-bottom: 1.2em;
+}
+
+#info-personali article {
+    text-align: right;
+    font-size: 1.3em;
+}
+
+#formazione {
+    border-bottom: dashed 1px #49494a;
+}
+
+span {
+    color: #191970;
+}
+
+#formazione article {
+    margin-bottom: 2em;
+}
+
+#competenze {
+    margin-bottom: 1em;
+    border-bottom: dashed 1px #49494a;
+}
+
+#primo-div {
+    background-color: #e6e6fa;
+}
+
+#secondo-div {
+    background-color: #fffacd;
+    margin-bottom: 2em;
+}
+
+#secondo-div div {
+    margin-left: 3em;
+}
+
+footer {
+    background-color: #191970;
+    border-top: solid #e6e6fa 5px;
+    text-align: center;
+    color: #fff;
+    padding-top: 1em;
+}
+
+footer h2 {
+    font-weight: bold;
+    font-size: 1.8em;
+}
+
+footer article {
+    font-style: italic;
+    font-size: 1.2em;
+}
+
+footer p {
+    font-family: Georgia, serif;
+    font-size: 1.1em;
+    padding-bottom: 1em;
+}
