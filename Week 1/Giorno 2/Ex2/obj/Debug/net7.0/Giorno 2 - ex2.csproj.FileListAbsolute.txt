@@ -1,0 +1,15 @@
+C:\Users\bavba\OneDrive\Documenti\Riccardo\Corso .NET\Week 1\Giorno 2 - Secondo Esercizio\bin\Debug\net7.0\Giorno 2 - ex2.exe
+C:\Users\bavba\OneDrive\Documenti\Riccardo\Corso .NET\Week 1\Giorno 2 - Secondo Esercizio\bin\Debug\net7.0\Giorno 2 - ex2.deps.json
+C:\Users\bavba\OneDrive\Documenti\Riccardo\Corso .NET\Week 1\Giorno 2 - Secondo Esercizio\bin\Debug\net7.0\Giorno 2 - ex2.runtimeconfig.json
+C:\Users\bavba\OneDrive\Documenti\Riccardo\Corso .NET\Week 1\Giorno 2 - Secondo Esercizio\bin\Debug\net7.0\Giorno 2 - ex2.dll
+C:\Users\bavba\OneDrive\Documenti\Riccardo\Corso .NET\Week 1\Giorno 2 - Secondo Esercizio\bin\Debug\net7.0\Giorno 2 - ex2.pdb
+C:\Users\bavba\OneDrive\Documenti\Riccardo\Corso .NET\Week 1\Giorno 2 - Secondo Esercizio\obj\Debug\net7.0\Giorno 2 - ex2.csproj.AssemblyReference.cache
+C:\Users\bavba\OneDrive\Documenti\Riccardo\Corso .NET\Week 1\Giorno 2 - Secondo Esercizio\obj\Debug\net7.0\Giorno 2 - ex2.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\bavba\OneDrive\Documenti\Riccardo\Corso .NET\Week 1\Giorno 2 - Secondo Esercizio\obj\Debug\net7.0\Giorno 2 - ex2.AssemblyInfoInputs.cache
+C:\Users\bavba\OneDrive\Documenti\Riccardo\Corso .NET\Week 1\Giorno 2 - Secondo Esercizio\obj\Debug\net7.0\Giorno 2 - ex2.AssemblyInfo.cs
+C:\Users\bavba\OneDrive\Documenti\Riccardo\Corso .NET\Week 1\Giorno 2 - Secondo Esercizio\obj\Debug\net7.0\Giorno 2 - ex2.csproj.CoreCompileInputs.cache
+C:\Users\bavba\OneDrive\Documenti\Riccardo\Corso .NET\Week 1\Giorno 2 - Secondo Esercizio\obj\Debug\net7.0\Giorno 2 - ex2.dll
+C:\Users\bavba\OneDrive\Documenti\Riccardo\Corso .NET\Week 1\Giorno 2 - Secondo Esercizio\obj\Debug\net7.0\refint\Giorno 2 - ex2.dll
+C:\Users\bavba\OneDrive\Documenti\Riccardo\Corso .NET\Week 1\Giorno 2 - Secondo Esercizio\obj\Debug\net7.0\Giorno 2 - ex2.pdb
+C:\Users\bavba\OneDrive\Documenti\Riccardo\Corso .NET\Week 1\Giorno 2 - Secondo Esercizio\obj\Debug\net7.0\Giorno 2 - ex2.genruntimeconfig.cache
+C:\Users\bavba\OneDrive\Documenti\Riccardo\Corso .NET\Week 1\Giorno 2 - Secondo Esercizio\obj\Debug\net7.0\ref\Giorno 2 - ex2.dll

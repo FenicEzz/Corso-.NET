@@ -1,0 +1,15 @@
+C:\Users\bavba\OneDrive\Documenti\Riccardo\Corso .NET\Week 1\Giorno 2 - Secondo Esercizio\bin\Debug\net7.0\Giorno 2 - Secondo Esercizio.exe
+C:\Users\bavba\OneDrive\Documenti\Riccardo\Corso .NET\Week 1\Giorno 2 - Secondo Esercizio\bin\Debug\net7.0\Giorno 2 - Secondo Esercizio.deps.json
+C:\Users\bavba\OneDrive\Documenti\Riccardo\Corso .NET\Week 1\Giorno 2 - Secondo Esercizio\bin\Debug\net7.0\Giorno 2 - Secondo Esercizio.runtimeconfig.json
+C:\Users\bavba\OneDrive\Documenti\Riccardo\Corso .NET\Week 1\Giorno 2 - Secondo Esercizio\bin\Debug\net7.0\Giorno 2 - Secondo Esercizio.dll
+C:\Users\bavba\OneDrive\Documenti\Riccardo\Corso .NET\Week 1\Giorno 2 - Secondo Esercizio\bin\Debug\net7.0\Giorno 2 - Secondo Esercizio.pdb
+C:\Users\bavba\OneDrive\Documenti\Riccardo\Corso .NET\Week 1\Giorno 2 - Secondo Esercizio\obj\Debug\net7.0\Giorno 2 - Secondo Esercizio.csproj.AssemblyReference.cache
+C:\Users\bavba\OneDrive\Documenti\Riccardo\Corso .NET\Week 1\Giorno 2 - Secondo Esercizio\obj\Debug\net7.0\Giorno 2 - Secondo Esercizio.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\bavba\OneDrive\Documenti\Riccardo\Corso .NET\Week 1\Giorno 2 - Secondo Esercizio\obj\Debug\net7.0\Giorno 2 - Secondo Esercizio.AssemblyInfoInputs.cache
+C:\Users\bavba\OneDrive\Documenti\Riccardo\Corso .NET\Week 1\Giorno 2 - Secondo Esercizio\obj\Debug\net7.0\Giorno 2 - Secondo Esercizio.AssemblyInfo.cs
+C:\Users\bavba\OneDrive\Documenti\Riccardo\Corso .NET\Week 1\Giorno 2 - Secondo Esercizio\obj\Debug\net7.0\Giorno 2 - Secondo Esercizio.csproj.CoreCompileInputs.cache
+C:\Users\bavba\OneDrive\Documenti\Riccardo\Corso .NET\Week 1\Giorno 2 - Secondo Esercizio\obj\Debug\net7.0\Giorno 2 - Secondo Esercizio.dll
+C:\Users\bavba\OneDrive\Documenti\Riccardo\Corso .NET\Week 1\Giorno 2 - Secondo Esercizio\obj\Debug\net7.0\refint\Giorno 2 - Secondo Esercizio.dll
+C:\Users\bavba\OneDrive\Documenti\Riccardo\Corso .NET\Week 1\Giorno 2 - Secondo Esercizio\obj\Debug\net7.0\Giorno 2 - Secondo Esercizio.pdb
+C:\Users\bavba\OneDrive\Documenti\Riccardo\Corso .NET\Week 1\Giorno 2 - Secondo Esercizio\obj\Debug\net7.0\Giorno 2 - Secondo Esercizio.genruntimeconfig.cache
+C:\Users\bavba\OneDrive\Documenti\Riccardo\Corso .NET\Week 1\Giorno 2 - Secondo Esercizio\obj\Debug\net7.0\ref\Giorno 2 - Secondo Esercizio.dll
