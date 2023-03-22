@@ -1,0 +1,41 @@
+.container {
+    margin: auto;
+}
+
+.tasto {
+    background-color: #666;
+    color: #eee;
+    font-size: 22pt;
+    border: none;
+    margin: 4px 2px;
+    height: 40px;
+    width: 46px;
+}
+
+.display {
+    color: #222;
+    font-size: 24pt;
+    border: #666 solid 2px;
+    margin: 4px 2px;
+    width: 200px;
+    height: 40px;
+}
+
+.uguale {
+    width: 154px;
+}
+
+.tasto:hover {
+    background-color: #222;
+    color: #eee;
+    cursor: pointer;
+}
+
+.selezione {
+    margin: 6px 3px;
+}
+
+select {
+    font-size: 16pt;
+    padding: 5px;
+}
