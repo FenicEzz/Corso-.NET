@@ -1,0 +1,28 @@
+-- 1
+--CREATE PROCEDURE AnnoTotaleContravvenzioni @Anno DATETIME2(0)
+--AS
+
+--SELECT *
+--FROM VERBALI
+--WHERE Data_Violazione = @Anno
+--GO;
+
+-- 2
+--CREATE PROCEDURE PuntiDecurtatiData @Data DATETIME2(0)
+--AS
+
+--SELECT 
+--	SUM(Decurtamento_Punti) AS Punti_Decurtati,
+--	Data_Violazione
+--FROM VERBALI
+--WHERE Data_Violazione = @Data
+--GROUP BY Data_Violazione
+--GO;
+
+-- 3
+--CREATE PROCEDURE EliminaVerbale @Id INT
+--AS
+
+--DELETE FROM VERBALI
+--WHERE Id_Verbale = @Id
+--GO;
