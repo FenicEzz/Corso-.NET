@@ -1,0 +1,15 @@
+C:\Users\bavba\OneDrive\Documenti\Riccardo\Corso .NET\Percorso Formativo\Corso-.NET\Week 6\Giorno 2\bin\Debug\net7.0\Giorno 2.exe
+C:\Users\bavba\OneDrive\Documenti\Riccardo\Corso .NET\Percorso Formativo\Corso-.NET\Week 6\Giorno 2\bin\Debug\net7.0\Giorno 2.deps.json
+C:\Users\bavba\OneDrive\Documenti\Riccardo\Corso .NET\Percorso Formativo\Corso-.NET\Week 6\Giorno 2\bin\Debug\net7.0\Giorno 2.runtimeconfig.json
+C:\Users\bavba\OneDrive\Documenti\Riccardo\Corso .NET\Percorso Formativo\Corso-.NET\Week 6\Giorno 2\bin\Debug\net7.0\Giorno 2.dll
+C:\Users\bavba\OneDrive\Documenti\Riccardo\Corso .NET\Percorso Formativo\Corso-.NET\Week 6\Giorno 2\bin\Debug\net7.0\Giorno 2.pdb
+C:\Users\bavba\OneDrive\Documenti\Riccardo\Corso .NET\Percorso Formativo\Corso-.NET\Week 6\Giorno 2\obj\Debug\net7.0\Giorno 2.csproj.AssemblyReference.cache
+C:\Users\bavba\OneDrive\Documenti\Riccardo\Corso .NET\Percorso Formativo\Corso-.NET\Week 6\Giorno 2\obj\Debug\net7.0\Giorno 2.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\bavba\OneDrive\Documenti\Riccardo\Corso .NET\Percorso Formativo\Corso-.NET\Week 6\Giorno 2\obj\Debug\net7.0\Giorno 2.AssemblyInfoInputs.cache
+C:\Users\bavba\OneDrive\Documenti\Riccardo\Corso .NET\Percorso Formativo\Corso-.NET\Week 6\Giorno 2\obj\Debug\net7.0\Giorno 2.AssemblyInfo.cs
+C:\Users\bavba\OneDrive\Documenti\Riccardo\Corso .NET\Percorso Formativo\Corso-.NET\Week 6\Giorno 2\obj\Debug\net7.0\Giorno 2.csproj.CoreCompileInputs.cache
+C:\Users\bavba\OneDrive\Documenti\Riccardo\Corso .NET\Percorso Formativo\Corso-.NET\Week 6\Giorno 2\obj\Debug\net7.0\Giorno 2.dll
+C:\Users\bavba\OneDrive\Documenti\Riccardo\Corso .NET\Percorso Formativo\Corso-.NET\Week 6\Giorno 2\obj\Debug\net7.0\refint\Giorno 2.dll
+C:\Users\bavba\OneDrive\Documenti\Riccardo\Corso .NET\Percorso Formativo\Corso-.NET\Week 6\Giorno 2\obj\Debug\net7.0\Giorno 2.pdb
+C:\Users\bavba\OneDrive\Documenti\Riccardo\Corso .NET\Percorso Formativo\Corso-.NET\Week 6\Giorno 2\obj\Debug\net7.0\Giorno 2.genruntimeconfig.cache
+C:\Users\bavba\OneDrive\Documenti\Riccardo\Corso .NET\Percorso Formativo\Corso-.NET\Week 6\Giorno 2\obj\Debug\net7.0\ref\Giorno 2.dll

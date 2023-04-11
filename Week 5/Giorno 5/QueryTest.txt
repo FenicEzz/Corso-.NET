@@ -1,0 +1,100 @@
+-- 1
+--SELECT 
+	--COUNT(Data_Trascrizione_Verbale) AS Verbali_Trascritti
+--FROM VERBALI
+--WHERE Data_Trascrizione_Verbale IS NOT NULL
+
+-- 2
+--SELECT 
+	--COUNT(Data_Trascrizione_Verbale) AS Verbali_Trascritti, 
+	--Id_Anagrafica
+--FROM VERBALI
+--WHERE Data_Trascrizione_Verbale IS NOT NULL
+--GROUP BY Id_Anagrafica
+
+-- 3
+--SELECT 
+	--COUNT(Data_Trascrizione_Verbale) AS Verbali_Trascritti, 
+	--Id_Violazione
+--FROM VERBALI
+--WHERE Data_Trascrizione_Verbale IS NOT NULL
+--GROUP BY Id_Violazione
+
+-- 4
+--SELECT SUM(Decurtamento_Punti) AS Punti_Decurtati, 
+	   --Id_Anagrafica
+--FROM VERBALI
+--GROUP BY Id_Anagrafica
+
+-- 5
+--SELECT
+--	Cognome,
+--	Nome,
+--	VERBALI.Data_Violazione,
+--	VERBALI.Indirizzo_Violazione,
+--	VERBALI.Importo,
+--	VERBALI.Decurtamento_Punti
+--FROM ANAGRAFICA
+--JOIN VERBALI ON ANAGRAFICA.Id_Anagrafica = VERBALI.Id_Anagrafica
+
+-- 6
+--SELECT 
+--	ANAGRAFICA.Cognome,
+--	ANAGRAFICA.Nome, 
+--	Data_Violazione,
+--	Importo,
+--	Decurtamento_Punti
+--FROM VERBALI
+--JOIN ANAGRAFICA ON VERBALI.Id_Anagrafica = ANAGRAFICA.Id_Anagrafica
+--WHERE Data_Violazione BETWEEN '2009-02-01' AND '2009-07-31'
+
+-- 7
+--SELECT 
+--	SUM(Importo) AS Totale_Importi, Id_Anagrafica
+--FROM VERBALI
+--GROUP BY Id_Anagrafica
+
+-- 8
+--SELECT *
+--FROM ANAGRAFICA
+--WHERE Città = 'Palermo'
+
+-- 9
+--DECLARE @data AS DATETIME2(0) = '2002-03-01'
+--SELECT 
+--	Data_Violazione,
+--	Importo,
+--	Decurtamento_Punti
+--FROM VERBALI
+--WHERE Data_Violazione = @data
+
+-- 10
+--SELECT
+--	Count(Id_Violazione) AS Violazioni_Contestate,
+--	Nominativo_Agente
+--FROM VERBALI
+--GROUP BY Nominativo_Agente
+
+-- 11
+--SELECT 
+--	Cognome,
+--	Nome,
+--	Indirizzo,
+--	VERBALI.Data_Violazione,
+--	VERBALI.Importo,
+--	VERBALI.Decurtamento_Punti
+--FROM ANAGRAFICA
+--JOIN VERBALI ON ANAGRAFICA.Id_Anagrafica = VERBALI.Id_Anagrafica
+--WHERE VERBALI.Decurtamento_Punti > 5
+
+-- 12 
+--SELECT
+--	Cognome,
+--	Nome,
+--	Indirizzo,
+--	VERBALI.Data_Violazione,
+--	VERBALI.Importo,
+--	VERBALI.Decurtamento_Punti
+--FROM ANAGRAFICA
+--JOIN VERBALI ON ANAGRAFICA.Id_Anagrafica = VERBALI.Id_Anagrafica
+--WHERE VERBALI.Importo > 400
