@@ -1,0 +1,77 @@
+﻿@model Giorno_5.Models.PersonalDataViewModel
+@{
+    ViewBag.Title = "Calcolo Codice Fiscale";
+
+    var li = new SelectListItem[]
+    {
+        new SelectListItem{Text = "primo", Value = "1" },
+        new SelectListItem{Text = "secondo", Value = "2" },
+        new SelectListItem{Text = "terzo", Value = "3" },
+        new SelectListItem{Text = "quarto", Value = "4" }
+                };
+}
+
+<main>
+    <section class="row" aria-labelledby="aspnetTitle">
+        <h1 id="title">Calcolo Codice Fiscale</h1>
+    </section>
+
+    <div class="row">
+        <section class="col-md-6 offset-3">
+            @using (Html.BeginForm("CalcoloCodiceFiscale" /* Nome Action */, "Home" /* Nome Controller */))
+            {
+                <div class="row">
+                    <div class="col-4">
+                        @Html.LabelFor(m => Model.Nome)
+                    </div>
+                    <div class="col-8">
+                        @Html.TextBoxFor(m => Model.Nome)
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-4">
+                        @Html.LabelFor(m => Model.Cognome)
+                    </div>
+                    <div class="col-8">
+                        @Html.TextBoxFor(m => Model.Cognome)
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-4">
+                        @Html.LabelFor(m => Model.DataNascita)
+                    </div>
+                    <div class="col-8">
+                        @Html.EditorFor(m => Model.DataNascita) @*HELPER PIU' ADEGUATO PER QUESTO TIPO DI DATO*@
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-4">
+                        @Html.LabelFor(m => Model.Sesso)
+                    </div>
+                    <div class="col-8">
+                        @Html.RadioButtonFor(m => Model.Sesso, 'm') M
+                        @Html.RadioButtonFor(m => Model.Sesso, 'f') F
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-4">
+                        @Html.LabelFor(m => Model.Istat)
+                    </div>
+                    <div class="col-8">
+                        @Html.DropDownListFor(m => Model.Istat, li)
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <button type="submit" class="btn btn-primary">Invia</button>
+                        <button type="reset" class="btn btn-secondary">Cancella</button>
+                    </div>
+                </div>
+            }
+
+            @*@{
+                  Html.EndForm();
+                }*@
+        </section>
+    </div>
+</main>

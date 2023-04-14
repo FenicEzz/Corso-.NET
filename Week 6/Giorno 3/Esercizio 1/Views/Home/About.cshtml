@@ -1,0 +1,44 @@
+﻿@{
+    ViewBag.Title = "About";
+
+    string Binario(int x)
+    {
+        string binary = Convert.ToString(x, 2);
+        return binary;
+    }
+
+    string Hex(int x)
+    {
+        string hex = Convert.ToString(x, 16);
+        return hex;
+    }
+
+    //string Romani(int x)
+    //{
+
+    //}
+}
+
+<main aria-labelledby="title">
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">Numeri</th>
+                <th scope="col">N.Binaria</th>
+                <th scope="col">N.Hex</th>
+                <th scope="col">N.Romana</th>
+            </tr>
+        </thead>
+        <tbody>
+            @for (int i = 1; i <= 500; i++)
+            {
+                <tr>
+                    <th scope="row">@i</th>
+                    <td>@Binario(i)</td>
+                    <td>@Hex(i)</td>
+                    @*<td>@Romani(i)</td>*@
+                </tr>
+            }
+        </tbody>
+    </table>
+</main>

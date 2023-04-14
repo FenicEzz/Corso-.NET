@@ -1,0 +1,28 @@
+﻿@model Giorno_4.Models.ViewModels.ContattiModel
+@{
+    ViewBag.Title = "Lista Contatti";
+}
+
+<main>
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">Nome</th>
+                <th scope="col">Cognome</th>
+                <th scope="col">Numero di Telefono</th>
+                <th scope="col">Email</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var user in Model.Contacts)
+            {
+                <tr>
+                    <td>@user.Nome</td>
+                    <td>@user.Cognome</td>
+                    <td>@user.NumeroTelefono</td>
+                    <td>@user.Email</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</main>
