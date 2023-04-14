@@ -125,7 +125,7 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\Comuni.cs" />
-    <Compile Include="Models\Persona.cs" />
+    <Compile Include="Models\ModelPersona.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Services\OttieniComuni.cs" />
   </ItemGroup>
