@@ -127,6 +127,8 @@
     <Compile Include="Models\Comuni.cs" />
     <Compile Include="Models\ModelPersona.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Services\CalcolaCodiceFiscale.cs" />
+    <Compile Include="Models\ConsonantiVocali.cs" />
     <Compile Include="Services\OttieniComuni.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -178,6 +180,7 @@
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Home\DatiUtente.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
