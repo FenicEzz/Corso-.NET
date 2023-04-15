@@ -18,5 +18,6 @@ namespace Progetto.Models
         [Display(Name = "Comune di nascita")]
         public Comuni Comune { get; set;}
         public char Sesso { get; set;}
+        public string CodiceFiscale { get; set;}
     }
 }
