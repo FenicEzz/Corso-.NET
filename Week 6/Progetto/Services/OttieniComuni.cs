@@ -5,11 +5,12 @@ using System.Data.SqlClient;
 using System.Linq;
 using System.Web;
 
+
 namespace Progetto.Services
 {
     public class OttieniComuni
     {
-        public IList<Comuni> CaricaComuni()
+        public List<Comuni> CaricaComuni()
         {
             var comuni = new List<Comuni>();
             var connString = @"Data Source=localhost\sqlexpress;Initial Catalog=Esercizio1;Integrated Security=True";
@@ -17,18 +18,18 @@ namespace Progetto.Services
             var conn = new SqlConnection(connString);
             var cmd = conn.CreateCommand();
             cmd.CommandText = query;
-            //conn.Open();
-            //var reader = cmd.ExecuteReader();
-            //while (reader.Read())
-            //{
-            //    var comune = new Comuni
-            //    {
-            //        Denominazione = reader.GetString(0),
-            //        Codice = reader.GetString(1),
-            //    };
-            //    comuni.Add(comune);
-            //}
-            //conn.Close();
+            conn.Open();
+            var reader = cmd.ExecuteReader();
+            while (reader.Read())
+            {
+                var comune = new Comuni
+                {
+                    Denominazione = reader.GetString(0),
+                    Codice = reader.GetString(1),
+                };
+                comuni.Add(comune);
+            }
+            conn.Close();
 
             return comuni;
         }
