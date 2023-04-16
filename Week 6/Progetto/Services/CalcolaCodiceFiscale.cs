@@ -44,31 +44,33 @@ namespace Progetto.Services
 
         private string CalcolaCognome(string cognome)
         {
+            cognome = cognome.ToLower();
             ConsonantiVocali cv = Elabora(cognome);
             string consonantiCognome = cv.Consonanti;
             string vocaliCognome = cv.Vocali;
 
             var result = (consonantiCognome + vocaliCognome + "X").Substring(0, 3);
 
-            return result;
+            return result.ToLower();
         }
 
         private string CalcolaNome(string nome)
         {
+            nome = nome.ToLower();
             ConsonantiVocali cv = Elabora(nome);
             string consonantiNome = cv.Consonanti;
             string vocaliNome = cv.Vocali;
 
             var result = (consonantiNome + vocaliNome + "X").Substring(0, 3);
 
-            return result;
+            return result.ToLower();
         }
 
         private string CalcolaAnno(DateTime anno)
         {
             var result = anno.Year.ToString();
 
-            return result;
+            return result.ToLower();
         }
 
         private string CalcolaMese(DateTime mese)
@@ -118,7 +120,7 @@ namespace Progetto.Services
                     return "Inserire un mese valido";
             }
 
-            return result;
+            return result.ToLower();
         }
 
         private string CalcolaGiorno(DateTime giorno, char gender)
@@ -148,9 +150,10 @@ namespace Progetto.Services
 
         private string CalcolaComune(string comune)
         {
+            comune = comune.ToLower();
             var codice = comune;
 
-            return codice;
+            return codice.ToLower();
         }
 
         public string CalcolaCF(ModelPersona utente)
@@ -453,7 +456,7 @@ namespace Progetto.Services
                     throw new Exception("Qualcosa e' andato storto!");
             }
 
-            return calcolo + carattereControllo;
+            return (calcolo + carattereControllo).ToUpper();
         }
     }
 }
