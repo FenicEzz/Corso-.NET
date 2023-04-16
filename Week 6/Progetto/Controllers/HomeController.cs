@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using Progetto.Models;
+using Progetto.Services;
 
 namespace Progetto.Controllers
 {
@@ -15,9 +16,9 @@ namespace Progetto.Controllers
         }
 
         [HttpPost]
-        public ActionResult DatiUtente(ModelPersona model)
-        {
-            return View(model);
+        public ActionResult DatiUtente(FormCollection fields)
+        { 
+            return View(fields);
         }
     }
 }

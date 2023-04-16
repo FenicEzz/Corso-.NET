@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Progetto.Services;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
@@ -16,6 +17,6 @@ namespace Progetto.Models
         public DateTime DataNascita { get; set;}
         public Comuni Comune { get; set;}
         public char Sesso { get; set;}
-        public string CodiceFiscale { get; set;}
+        public CalcolaCodiceFiscale CF { get; set;}
     }
 }

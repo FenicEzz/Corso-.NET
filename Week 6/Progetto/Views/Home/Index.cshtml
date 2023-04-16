@@ -7,13 +7,12 @@
     ViewBag.Title = "Dati Utente";
     var servizio = new OttieniComuni();
     var comuni = servizio.CaricaComuni();
-    var nomiComuni = comuni.Select(x => x.Denominazione);
 
     var list = new List<SelectListItem>();
 
-    foreach(var m in nomiComuni)
+    foreach(var m in comuni)
     {
-        list.Add(new SelectListItem { Text = m});
+        list.Add(new SelectListItem { Text = m.Denominazione, Value = m.Codice });
     }
 }
 

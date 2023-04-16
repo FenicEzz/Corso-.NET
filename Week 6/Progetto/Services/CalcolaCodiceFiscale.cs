@@ -8,6 +8,7 @@ namespace Progetto.Services
 {
     public class CalcolaCodiceFiscale
     {
+        public string CodiceFiscale { get; private set; }
         private ConsonantiVocali Elabora(string testo)
         {
             testo = testo.Replace(" ", string.Empty).ToLower();
@@ -456,7 +457,7 @@ namespace Progetto.Services
                     throw new Exception("Qualcosa e' andato storto!");
             }
 
-            return (calcolo + carattereControllo).ToUpper();
+            return CodiceFiscale = (calcolo + carattereControllo).ToUpper();
         }
     }
 }
