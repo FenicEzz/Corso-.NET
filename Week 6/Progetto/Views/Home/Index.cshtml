@@ -1,15 +1,20 @@
 ﻿@using Progetto.Services;
 @using System.Linq;
+@using System.Web.UI.WebControls;
 
 @model  Progetto.Models.ModelPersona
 @{
     ViewBag.Title = "Dati Utente";
     var servizio = new OttieniComuni();
     var comuni = servizio.CaricaComuni();
+    var nomiComuni = comuni.Select(x => x.Denominazione);
 
-    var nomeComuni = comuni.Select(x => x.Denominazione);
-    var codiceComuni = comuni.Select(x => x.Codice);
+    var list = new List<SelectListItem>();
 
+    foreach(var m in nomiComuni)
+    {
+        list.Add(new SelectListItem { Text = m});
+    }
 }
 
 <main>
@@ -53,8 +58,17 @@
                         @Html.LabelFor(x => Model.Sesso)
                     </div>
                     <div class="col-8">
-                        @Html.RadioButtonFor(x => Model.Sesso, 'm' ) M
-                        @Html.RadioButtonFor(x => Model.Sesso, 'f' ) F
+                        @Html.RadioButtonFor(x => Model.Sesso, 'm') M
+                        @Html.RadioButtonFor(x => Model.Sesso, 'f') F
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-4">
+                        @Html.LabelFor(x => Model.Comune.Denominazione)
+                    </div>
+                    <div class="col-8">
+                        @Html.DropDownListFor(x => Model.Comune.Denominazione, list)
                     </div>
                 </div>
             }
