@@ -2,6 +2,7 @@
 
 @{
     ViewBag.Title = "DatiUtente";
+    var servizio = new Progetto.Services.CalcolaCodiceFiscale();
 }
 
 <h2>DatiUtente</h2>
@@ -43,11 +44,19 @@
         </dd>
 
         <dt>
-            @Html.DisplayNameFor(model => model.CF.CodiceFiscale)
+            @Html.DisplayNameFor(model => model.Sesso)
         </dt>
 
         <dd>
-            @Html.DisplayFor(model => model.CF.CalcolaCF(model))
+            @Html.DisplayFor(model => model.Sesso)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CF)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CF)
         </dd>
 
     </dl>

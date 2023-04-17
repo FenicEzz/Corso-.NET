@@ -16,9 +16,13 @@ namespace Progetto.Controllers
         }
 
         [HttpPost]
-        public ActionResult DatiUtente(FormCollection fields)
-        { 
-            return View(fields);
+        public ActionResult DatiUtente(ModelPersona model)
+        {
+            var servizio = new CalcolaCodiceFiscale();
+
+            model.CF = servizio.CalcolaCF(model.Nome, model.Cognome, model.DataNascita, model.Comune.Codice, model.Sesso);
+
+            return View(model);
         }
     }
 }

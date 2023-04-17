@@ -15,8 +15,10 @@ namespace Progetto.Models
         [Display(Name = "Data di nascita")]
         [DataType(DataType.Date)]
         public DateTime DataNascita { get; set;}
+
+        [Display(Name = "Comune di nascita")]
         public Comuni Comune { get; set;}
         public char Sesso { get; set;}
-        public CalcolaCodiceFiscale CF { get; set;}
+        public string CF { get; set;}
     }
 }

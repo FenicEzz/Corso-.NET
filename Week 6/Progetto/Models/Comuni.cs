@@ -9,7 +9,6 @@ namespace Progetto.Models
 {
     public class Comuni
     {
-        [Display(Name = "Comune di nascita")]
         public string Denominazione { get; set; }
         public string Codice { get; set; }
     }

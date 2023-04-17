@@ -8,7 +8,7 @@ namespace Progetto.Services
 {
     public class CalcolaCodiceFiscale
     {
-        public string CodiceFiscale { get; private set; }
+        //public string CodiceFiscale { get; private set; }
         private ConsonantiVocali Elabora(string testo)
         {
             testo = testo.Replace(" ", string.Empty).ToLower();
@@ -157,17 +157,17 @@ namespace Progetto.Services
             return codice.ToLower();
         }
 
-        public string CalcolaCF(ModelPersona utente)
+        public string CalcolaCF(string nome, string cognome, DateTime data, string comune, char sesso)
         {
             string carattereControllo;
             int contoPari = 0;
             int contoDispari = 0;
-            var calcolo = CalcolaCognome(utente.Cognome) +
-                CalcolaNome(utente.Nome) + 
-                CalcolaAnno(utente.DataNascita) + 
-                CalcolaMese(utente.DataNascita) + 
-                CalcolaGiorno(utente.DataNascita, utente.Sesso) + 
-                CalcolaComune(utente.Comune.Codice);          
+            var calcolo = CalcolaCognome(cognome) +
+                CalcolaNome(nome) + 
+                CalcolaAnno(data) + 
+                CalcolaMese(data) + 
+                CalcolaGiorno(data, sesso) + 
+                CalcolaComune(comune);          
 
             for (int i = 0; i < calcolo.Length; i++)
             {
@@ -457,7 +457,7 @@ namespace Progetto.Services
                     throw new Exception("Qualcosa e' andato storto!");
             }
 
-            return CodiceFiscale = (calcolo + carattereControllo).ToUpper();
+            return (calcolo + carattereControllo).ToUpper();
         }
     }
 }
