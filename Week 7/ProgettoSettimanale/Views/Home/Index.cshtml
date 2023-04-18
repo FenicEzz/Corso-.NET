@@ -1,0 +1,46 @@
+﻿@model ProgettoSettimanale.Models.Persona
+@{
+    ViewBag.Title = "Home Page";
+}
+
+<main>
+    <section class="row" aria-labelledby="aspnetTitle">
+        @{ using (Html.BeginForm("Dati", "Home"))
+            {
+                <div class="col-md-6">
+                    @Html.ValidationSummary()
+                    <div class="row">
+                        <div class="col-8">
+                            @Html.LabelFor(x => Model.Nome)
+                        </div>
+                        <div class="col-4">
+                            @Html.TextBoxFor(x => Model.Nome)
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-8">
+                            @Html.LabelFor(x => Model.Cognome)
+                        </div>
+                        <div class="col-4">
+                            @Html.TextBoxFor(x => Model.Cognome)
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-8">
+                            @Html.LabelFor(x => Model.Età)
+                        </div>
+                        <div class="col-4">
+                            @Html.EditorFor(x => Model.Età)
+                        </div>
+                    </div>
+                    <button type="reset" class="btn btn-secondary">Reset</button>
+                    <button type="submit" class="btn btn-primary">Invia</button>
+                </div>
+            }
+        }
+    </section>
+</main>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+} 
