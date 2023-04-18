@@ -35,5 +35,10 @@ namespace ProgettoSettimanale.Controllers
 
             return View(model);
         }
+
+        public ActionResult Details(CarModel car)
+        {
+            return View(car);
+        }
     }
 }
