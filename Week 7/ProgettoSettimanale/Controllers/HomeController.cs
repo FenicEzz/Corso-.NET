@@ -1,5 +1,4 @@
-﻿using ProgettoSettimanale.Models;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -12,12 +11,6 @@ namespace ProgettoSettimanale.Controllers
         public ActionResult Index()
         {
             return View();
-        }
-
-        [HttpPost]
-        public ActionResult Dati(Persona utente) 
-        {
-            return View(utente);
         }
 
         public ActionResult About()
