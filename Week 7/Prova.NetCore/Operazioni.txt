@@ -1,0 +1,7 @@
+﻿Un utente può
+1* pubblicare un articolo
+2* modificare un SUO articolo
+3* eliminare un SUO articolo
+4* visualizzare l'elenco di tutti gli articoli
+5* leggere un articolo
+6* commentare un articolo

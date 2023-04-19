@@ -1,0 +1,21 @@
+﻿@model Prova.NetCore.Models.Article
+
+@{
+    ViewData["Title"] = "Visualizzazione";
+}
+
+<h1>@Model.Title</h1>
+
+<hr />
+<div class="container">
+    <div class="row">
+        <div class="col">
+            @Model.Description
+        </div>
+    </div>
+    <div class="row">
+        <div class="col text-end">
+            [@Model.Author]
+        </div>
+    </div>
+</div>
