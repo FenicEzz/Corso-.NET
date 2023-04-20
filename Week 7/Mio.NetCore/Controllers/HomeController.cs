@@ -8,16 +8,17 @@ namespace Mio.NetCore.Controllers
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
+        private IBlogService _blogService;
 
-        public HomeController(ILogger<HomeController> logger)
+        public HomeController(ILogger<HomeController> logger, IBlogService blogService)
         {
             _logger = logger;
+            _blogService = blogService;
         }
 
         public IActionResult Index()
         {
-            var service = new RetrieveData();
-            var articoli = service.GetAllArticles();
+            var articoli = _blogService.GetAllArticles().OrderBy(x => x.Author);
 
             return View(articoli);
         }

@@ -7,7 +7,7 @@ namespace Mio.NetCore.Services
     public class RetrieveData : IBlogService
     {
         //private List<Article> _list = new List<Article>();
-        private string _connString = @"Data Source=localhost\sqlexpress;Initial Catalog=Esercizio3;Integrated Security=True";
+        private static string _connString = @"Data Source=localhost\sqlexpress;Initial Catalog=Esercizio3;Integrated Security=True";
 
         public void AddArticle(Article article)
         {
@@ -38,6 +38,7 @@ namespace Mio.NetCore.Services
                     };
 
                     lista.Add(article);
+                    conn.Close();
                 }
             }
             catch(Exception ex)
