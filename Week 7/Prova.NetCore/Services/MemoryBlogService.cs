@@ -6,14 +6,14 @@ namespace Prova.NetCore.Services
     {
         //QUESTA CLASSE DEVE IMPLEMENTARE TUTTI I METODI DELL'INTERFACCIA
 
-        private static List<Article> _articles = new List<Article>();
-        //{
-        //    new Article{Author = "Nello", CreatedAt=DateTime.Now, Description = "Contenuto dell'articolo 1", Title = "Titolo 1", Id = 1},
-        //    new Article{Author = "Rick", CreatedAt=DateTime.Now, Description = "Contenuto dell'articolo 2", Title = "Titolo 2", Id = 2},
-        //    new Article{Author = "Fab", CreatedAt=DateTime.Now, Description = "Contenuto dell'articolo 3", Title = "Titolo 3", Id = 3},
-        //    new Article{Author = "Matt", CreatedAt=DateTime.Now, Description = "Contenuto dell'articolo 4", Title = "Titolo 4", Id = 4},
-        //    new Article{Author = "Mark", CreatedAt=DateTime.Now, Description = "Contenuto dell'articolo 5", Title = "Titolo 5", Id = 5}
-        //};
+        private static List<Article> _articles = new List<Article>()
+        {
+            new Article{Author = "Nello", CreatedAt=DateTime.Now, Description = "Contenuto dell'articolo 1", Title = "Titolo 1", Id = 1},
+            new Article{Author = "Rick", CreatedAt=DateTime.Now, Description = "Contenuto dell'articolo 2", Title = "Titolo 2", Id = 2},
+            new Article{Author = "Fab", CreatedAt=DateTime.Now, Description = "Contenuto dell'articolo 3", Title = "Titolo 3", Id = 3},
+            new Article{Author = "Matt", CreatedAt=DateTime.Now, Description = "Contenuto dell'articolo 4", Title = "Titolo 4", Id = 4},
+            new Article{Author = "Mark", CreatedAt=DateTime.Now, Description = "Contenuto dell'articolo 5", Title = "Titolo 5", Id = 5}
+        };
 
         private static int id = _articles
             .Select(x => x.Id)

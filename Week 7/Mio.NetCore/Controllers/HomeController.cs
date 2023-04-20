@@ -20,6 +20,11 @@ namespace Mio.NetCore.Controllers
         {
             var articoli = _blogService.GetAllArticles().OrderBy(x => x.Author);
 
+            //var one = new Article { Author = "abc", Id = 0, Description = "adsf", CreatedAt = DateTime.Now, Title = "dsfsdf" };
+            //var two = new Article { Author = "abc", Id = 1, Description = "adsf", CreatedAt = DateTime.Now, Title = "dsfsdf" };
+            //var three = new Article { Author = "abc", Id = 2, Description = "adsf", CreatedAt = DateTime.Now, Title = "dsfsdf" };
+            //var four = new Article { Author = "abc", Id = 3, Description = "adsf", CreatedAt = DateTime.Now, Title = "dsfsdf" };
+
             return View(articoli);
         }
 

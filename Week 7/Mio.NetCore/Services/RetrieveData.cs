@@ -6,8 +6,10 @@ namespace Mio.NetCore.Services
 {
     public class RetrieveData : IBlogService
     {
-        //private List<Article> _list = new List<Article>();
-        private static string _connString = @"Data Source=localhost\sqlexpress;Initial Catalog=Esercizio3;Integrated Security=True";
+        private static string _connString = @"Data Source=localhost\sqlexpress;Initial Catalog=Esercizio3;Integrated Security=True;TrustServerCertificate=true";
+
+        private static List<Article> _list = new List<Article>();
+        public static List<Article> List { get { return _list; } }
 
         public void AddArticle(Article article)
         {
@@ -16,8 +18,7 @@ namespace Mio.NetCore.Services
 
         public IEnumerable<Article> GetAllArticles()
         {
-            var lista = new List<Article>();
-            string selectCommand = "SELECT * FROM ARTICOLI";
+            var selectCommand = "SELECT * FROM ARTICOLI";
             var conn = new SqlConnection(_connString);
             var cmd = conn.CreateCommand();
             cmd.CommandText = selectCommand;
@@ -37,16 +38,16 @@ namespace Mio.NetCore.Services
                         CreatedAt = reader.GetDateTime(4),
                     };
 
-                    lista.Add(article);
-                    conn.Close();
+                    _list.Add(article);                  
                 }
+                conn.Close();
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 Console.WriteLine(ex.Message);
             }
 
-            return lista;
+            return _list;
         }
 
         public Article GetArticle(int id)
