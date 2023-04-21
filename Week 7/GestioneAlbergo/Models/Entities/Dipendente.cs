@@ -1,0 +1,14 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+
+namespace GestioneAlbergo.Models.Entities
+{
+    public class Dipendente
+    {
+        public int IdDipendente { get; set; }  
+        public string Email { get; set; }
+        public string Password { get; set; }
+    }
+}
