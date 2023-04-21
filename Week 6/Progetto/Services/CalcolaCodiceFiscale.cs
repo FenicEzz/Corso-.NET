@@ -8,7 +8,7 @@ namespace Progetto.Services
 {
     public class CalcolaCodiceFiscale
     {
-        public string CodiceFiscale { get; private set; }
+        //public string CodiceFiscale { get; private set; }
         private ConsonantiVocali Elabora(string testo)
         {
             testo = testo.Replace(" ", string.Empty).ToLower();
@@ -45,31 +45,77 @@ namespace Progetto.Services
 
         private string CalcolaCognome(string cognome)
         {
-            cognome = cognome.ToLower();
+            cognome = cognome.Replace(" ", string.Empty).ToLower();
             ConsonantiVocali cv = Elabora(cognome);
             string consonantiCognome = cv.Consonanti;
             string vocaliCognome = cv.Vocali;
+            
+            if (consonantiCognome.Length >= 3)
+            {
+                cognome = $"{consonantiCognome.Substring(0, 3)}";
+            }
 
-            var result = (consonantiCognome + vocaliCognome + "X").Substring(0, 3);
+            else if (consonantiCognome.Length == 2)
+            {
+                cognome = $"{consonantiCognome[0].ToString() + consonantiCognome[1].ToString() + vocaliCognome[0].ToString()}";
+            }
 
-            return result.ToLower();
+            else if (consonantiCognome.Length == 1 && vocaliCognome.Length == 2)
+            {
+                cognome = $"{consonantiCognome[0].ToString() + vocaliCognome[0].ToString() + vocaliCognome[1].ToString()}";
+            }
+
+            else if (consonantiCognome.Length == 1 && vocaliCognome.Length == 1)
+            {
+                cognome = $"{consonantiCognome[0].ToString() + vocaliCognome[0].ToString()}x";
+            }
+
+            else if (consonantiCognome.Length == 0 && vocaliCognome.Length == 2)
+            {
+                cognome = $"{vocaliCognome[0].ToString() + vocaliCognome[1].ToString()}x";
+            }
+
+            return cognome.ToLower();
         }
 
         private string CalcolaNome(string nome)
         {
-            nome = nome.ToLower();
+            nome = nome.Replace(" ", string.Empty).ToLower();
             ConsonantiVocali cv = Elabora(nome);
             string consonantiNome = cv.Consonanti;
             string vocaliNome = cv.Vocali;
 
-            var result = (consonantiNome + vocaliNome + "X").Substring(0, 3);
+            if (consonantiNome.Length >= 4)
+            {
+                nome = consonantiNome[0].ToString() + consonantiNome[2].ToString() + consonantiNome[3].ToString();
+            }
+            else if (consonantiNome.Length == 3)
+            {
+                nome = consonantiNome.ToString();
+            }
+            else if (consonantiNome.Length == 2)
+            {
+                nome = consonantiNome.ToString() + vocaliNome[0].ToString();
+            }
+            else if (consonantiNome.Length == 1)
+            {
+                nome = consonantiNome.ToString() + vocaliNome[0].ToString() + vocaliNome[1].ToString();
+            }
+            else if (consonantiNome.Length == 1 && vocaliNome.Length == 1)
+            {
+                nome = consonantiNome.ToString() + vocaliNome.ToString() + "x";
+            }
+            else if (vocaliNome.Length == 2)
+            {
+                nome = vocaliNome.ToString() + "x";
+            }
 
-            return result.ToLower();
+            return nome.ToLower();
         }
 
         private string CalcolaAnno(DateTime anno)
         {
-            var result = anno.Year.ToString();
+            var result = anno.Year.ToString().Substring(2);
 
             return result.ToLower();
         }
@@ -146,15 +192,14 @@ namespace Progetto.Services
                 day += 40;
             }
 
-            return day.ToString();
+            return (day > 9 ? day.ToString() : "0" + day.ToString());
         }
 
         private string CalcolaComune(string comune)
         {
             comune = comune.ToLower();
-            var codice = comune;
 
-            return codice.ToLower();
+            return comune;
         }
 
         public string CalcolaCF(ModelPersona utente)
@@ -167,7 +212,7 @@ namespace Progetto.Services
                 CalcolaAnno(utente.DataNascita) + 
                 CalcolaMese(utente.DataNascita) + 
                 CalcolaGiorno(utente.DataNascita, utente.Sesso) + 
-                CalcolaComune(utente.Comune.Codice);          
+                CalcolaComune(utente.Comune.Denominazione);          
 
             for (int i = 0; i < calcolo.Length; i++)
             {
@@ -454,10 +499,10 @@ namespace Progetto.Services
                     carattereControllo = "Z";
                     break;
                 default:
-                    throw new Exception("Qualcosa e' andato storto!");
+                    throw new Exception("Qualcosa è andato storto!");
             }
 
-            return CodiceFiscale = (calcolo + carattereControllo).ToUpper();
+            return (calcolo + carattereControllo).ToUpper();
         }
     }
 }

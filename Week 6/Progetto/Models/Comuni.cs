@@ -9,8 +9,10 @@ namespace Progetto.Models
 {
     public class Comuni
     {
-        [Display(Name = "Comune di nascita")]
+        [Display(Name = "Nome Comune")]
         public string Denominazione { get; set; }
+
+        [Display(Name = "Codice Comune")]
         public string Codice { get; set; }
     }
 }

@@ -17,6 +17,6 @@ namespace Progetto.Models
         public DateTime DataNascita { get; set;}
         public Comuni Comune { get; set;}
         public char Sesso { get; set;}
-        public CalcolaCodiceFiscale CF { get; set;}
+        public string CF { get; set;}
     }
 }

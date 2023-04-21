@@ -1,0 +1,22 @@
+﻿<ul id="list">
+
+
+</ul>
+
+@section Scripts {
+    <script>
+        $(function(){
+            $.ajax({
+                url: "@Url.RouteUrl("GetAll")",
+                type: 'get',
+                success: function(data){
+                    $(data).each(function(_, i){
+                        var li = $("<li>")
+                        li.text(i.title)
+                        li.appendTo($("#list"))
+                    })
+                }
+            })
+        })
+    </script>
+}

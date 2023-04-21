@@ -1,0 +1,36 @@
+﻿@model IEnumerable<Article>
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">My Blog</h1>
+    <a asp-action="AddArticle" asp-controller="Home" class="btn btn-warning">Nuovo Articolo</a>
+</div>
+<div class="container">
+    @if (Model.Any())
+    {
+        <div class="text-info">Questi sono tutti gli articoli pubblicati.</div>
+
+        <table class="table table-hover">
+            <tr>
+                <th>Titolo</th>
+                <th>Data creazione</th>
+            </tr>
+            @foreach (var article in Model)
+            {
+                <tr>
+                    <td>@article.Title</td>
+                    <td>il @article.CreatedAt da @article.Author</td>
+                    <td>
+                        <a asp-action="ViewArticle" asp-route-id="@article.Id">Visualizza</a>
+                    </td>
+                </tr>
+            }
+        </table>
+    }
+    else
+    {
+        <div class="alert alert-danger">Nessun articolo in archivio</div>
+    }
+</div>
