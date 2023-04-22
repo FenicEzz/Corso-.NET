@@ -11,7 +11,6 @@
 using System;
 using System.Reflection;
 
-[assembly: Microsoft.AspNetCore.Identity.UI.UIFrameworkAttribute("Bootstrap5")]
 [assembly: Microsoft.Extensions.Configuration.UserSecrets.UserSecretsIdAttribute("aspnet-Prova.NetCore-2ead7e2a-aea4-411b-b73b-285d750e492a")]
 [assembly: System.Reflection.AssemblyCompanyAttribute("Prova.NetCore")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]

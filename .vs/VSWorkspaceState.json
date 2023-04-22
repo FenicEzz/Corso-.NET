@@ -1,6 +1,11 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\Week 7",
+    "\\Week 7\\GestioneAlbergo",
+    "\\Week 7\\GestioneAlbergo\\Views",
+    "\\Week 7\\GestioneAlbergo\\Views\\Home"
   ],
+  "SelectedNode": "\\Week 7\\GestioneAlbergo\\Views\\Home\\Index.cshtml",
   "PreviewInSolutionExplorer": false
 }

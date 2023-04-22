@@ -11,7 +11,6 @@
 using System;
 using System.Reflection;
 
-[assembly: Microsoft.AspNetCore.Identity.UI.UIFrameworkAttribute("Bootstrap5")]
 [assembly: Microsoft.Extensions.Configuration.UserSecrets.UserSecretsIdAttribute("aspnet-Mio.NetCore-d2cfa93e-e9fb-4bb7-9a99-7fd7c43b2dd3")]
 [assembly: System.Reflection.AssemblyCompanyAttribute("Mio.NetCore")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
