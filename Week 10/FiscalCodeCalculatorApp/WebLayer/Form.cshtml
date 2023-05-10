@@ -1,0 +1,58 @@
+﻿@model DataLayer.User
+
+@{
+    ViewData["Title"] = "Form";
+}
+
+<h1>Form</h1>
+
+<h4>User</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Form">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Name" class="control-label"></label>
+                <input asp-for="Name" class="form-control" />
+                <span asp-validation-for="Name" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Surname" class="control-label"></label>
+                <input asp-for="Surname" class="form-control" />
+                <span asp-validation-for="Surname" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Birthdate" class="control-label"></label>
+                <input asp-for="Birthdate" class="form-control" />
+                <span asp-validation-for="Birthdate" class="text-danger"></span>
+            </div>
+            <div class="form-group form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" asp-for="IsMale" /> @Html.DisplayNameFor(model => model.IsMale)
+                </label>
+            </div>
+            <div class="form-group">
+                <label asp-for="Birthcity" class="control-label"></label>
+                <input asp-for="Birthcity" class="form-control" />
+                <span asp-validation-for="Birthcity" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="FiscalCode" class="control-label"></label>
+                <input asp-for="FiscalCode" class="form-control" />
+                <span asp-validation-for="FiscalCode" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
