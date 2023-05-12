@@ -36,27 +36,48 @@ namespace FiscalCodeCalculator.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public IActionResult Form(User user)
+        public async Task<IActionResult> Form(User user)
         {
             if (ModelState.IsValid)
             {
-                user.FiscalCode = _srvc.CalculateCode(user);
-                _ctx.Users.Add(user);
-                _ctx.SaveChanges();
+                try
+                {
+                    _ctx.Database.BeginTransaction();
+                    user.FiscalCode = _srvc.CalculateCode(user);
+                    _ctx.Users.Add(user);
+                    await _ctx.Database.CommitTransactionAsync();
+                    await _ctx.SaveChangesAsync();
 
-                return RedirectToAction(nameof(Index));
+                    return RedirectToAction(nameof(Index));
+                }
+                catch (Exception ex)
+                {
+                    _ctx.Database.RollbackTransaction();
+                    Console.WriteLine(ex.ToString());
+                }
             }
+
             var c = _ctx.Cities.OrderBy(x => x.Name).ToList();
             ViewBag.Cities = c;
 
             return View(user);
         }
 
-        public IActionResult Delete(int id)
+        public async Task<IActionResult> Delete(int id)
         {
-            var user = _ctx.Users.Single(x => x.Id == id);
-            _ctx.Users.Remove(user);
-            _ctx.SaveChanges();
+            try
+            {
+                _ctx.Database.BeginTransaction();
+                var user = _ctx.Users.Single(x => x.Id == id);
+                _ctx.Users.Remove(user);
+                await _ctx.Database.CommitTransactionAsync();
+                await _ctx.SaveChangesAsync();
+            }
+            catch (Exception ex)
+            {
+                _ctx.Database.RollbackTransaction();
+                Console.WriteLine(ex.ToString());
+            }
 
             return RedirectToAction(nameof(Index));
         }

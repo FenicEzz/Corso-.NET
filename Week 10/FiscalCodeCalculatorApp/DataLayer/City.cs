@@ -19,5 +19,8 @@ namespace DataLayer
 
         [Required]
         public string CityCode { get; set; }
+
+        [Required]
+        public string Province { get; set; }
     }
 }

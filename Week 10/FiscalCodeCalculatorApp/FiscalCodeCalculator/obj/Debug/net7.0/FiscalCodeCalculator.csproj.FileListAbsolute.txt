@@ -287,3 +287,10 @@ C:\Users\bavba\OneDrive\Documenti\Riccardo\Corso .NET\Percorso Formativo\Corso-.
 C:\Users\bavba\OneDrive\Documenti\Riccardo\Corso .NET\Percorso Formativo\Corso-.NET\Week 10\FiscalCodeCalculatorApp\FiscalCodeCalculator\obj\Debug\net7.0\FiscalCodeCalculator.pdb
 C:\Users\bavba\OneDrive\Documenti\Riccardo\Corso .NET\Percorso Formativo\Corso-.NET\Week 10\FiscalCodeCalculatorApp\FiscalCodeCalculator\obj\Debug\net7.0\FiscalCodeCalculator.genruntimeconfig.cache
 C:\Users\bavba\OneDrive\Documenti\Riccardo\Corso .NET\Percorso Formativo\Corso-.NET\Week 10\FiscalCodeCalculatorApp\FiscalCodeCalculator\obj\Debug\net7.0\ref\FiscalCodeCalculator.dll
+C:\Users\bavba\OneDrive\Documenti\Riccardo\Corso .NET\Percorso Formativo\Corso-.NET\Week 10\FiscalCodeCalculatorApp\FiscalCodeCalculator\bin\Debug\net7.0\System.Web.Mvc.dll
+C:\Users\bavba\OneDrive\Documenti\Riccardo\Corso .NET\Percorso Formativo\Corso-.NET\Week 10\FiscalCodeCalculatorApp\FiscalCodeCalculator\bin\Debug\net7.0\System.Web.Razor.dll
+C:\Users\bavba\OneDrive\Documenti\Riccardo\Corso .NET\Percorso Formativo\Corso-.NET\Week 10\FiscalCodeCalculatorApp\FiscalCodeCalculator\bin\Debug\net7.0\System.Web.Helpers.dll
+C:\Users\bavba\OneDrive\Documenti\Riccardo\Corso .NET\Percorso Formativo\Corso-.NET\Week 10\FiscalCodeCalculatorApp\FiscalCodeCalculator\bin\Debug\net7.0\System.Web.WebPages.Deployment.dll
+C:\Users\bavba\OneDrive\Documenti\Riccardo\Corso .NET\Percorso Formativo\Corso-.NET\Week 10\FiscalCodeCalculatorApp\FiscalCodeCalculator\bin\Debug\net7.0\System.Web.WebPages.Razor.dll
+C:\Users\bavba\OneDrive\Documenti\Riccardo\Corso .NET\Percorso Formativo\Corso-.NET\Week 10\FiscalCodeCalculatorApp\FiscalCodeCalculator\bin\Debug\net7.0\System.Web.WebPages.dll
+C:\Users\bavba\OneDrive\Documenti\Riccardo\Corso .NET\Percorso Formativo\Corso-.NET\Week 10\FiscalCodeCalculatorApp\FiscalCodeCalculator\bin\Debug\net7.0\Microsoft.Web.Infrastructure.dll

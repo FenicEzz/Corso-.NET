@@ -10,5 +10,7 @@ namespace FiscalCodeCalculator.Data
             : base(options)
         {
         }
+        public DbSet<DataLayer.City> City { get; set; } = default!;
+        public DbSet<DataLayer.User> User { get; set; } = default!;
     }
 }
