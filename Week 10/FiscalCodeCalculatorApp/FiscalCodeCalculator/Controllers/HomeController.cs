@@ -23,6 +23,9 @@ namespace FiscalCodeCalculator.Controllers
         public IActionResult Index()
         {
             var list = _ctx.Users.ToList();
+            var last = _ctx.Users.OrderBy(x => x.Id).LastOrDefault();
+            ViewBag.LastName = last.Name;
+            ViewBag.LastFC = last.FiscalCode;
 
             return View(list);
         }

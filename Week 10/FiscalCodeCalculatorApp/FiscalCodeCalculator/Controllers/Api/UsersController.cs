@@ -12,7 +12,6 @@ using Microsoft.DotNet.MSIdentity.Shared;
 using Newtonsoft.Json.Schema;
 using BusinessLayer.Interfaces;
 using System.Web.Helpers;
-//using System.Web.Mvc;
 
 namespace FiscalCodeCalculator.Controllers.Api
 {
@@ -30,8 +29,6 @@ namespace FiscalCodeCalculator.Controllers.Api
         }
 
 
-        // POST: api/Api
-        // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPost()]
         public ActionResult GetUserFiscalCode(User user)
         {
@@ -43,6 +40,29 @@ namespace FiscalCodeCalculator.Controllers.Api
             }
 
             return BadRequest("Errore nei dati");
+        }
+
+
+        [HttpGet("allusers")]
+        public async Task<ActionResult> GetAllUsers()
+        {
+            var users = await _context.Users.Select(x => new { x.Id, x.Name, x.FiscalCode }).OrderBy(x => x.Id).ToListAsync();
+
+            return Ok(users);
+        }
+
+
+        [HttpGet("user/{id}")]
+        public async Task<ActionResult> GetUser(long id)
+        {
+            var user = await _context.Users.SingleOrDefaultAsync(x => x.Id == id);
+
+            if(user == null)
+            {
+                return BadRequest("Nessun utente con questo id!");
+            }
+
+            return Ok(user);
         }
     }
 }

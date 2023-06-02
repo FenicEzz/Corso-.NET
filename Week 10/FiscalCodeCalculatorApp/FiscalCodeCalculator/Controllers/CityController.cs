@@ -23,9 +23,9 @@ namespace FiscalCodeCalculator.Controllers
 
         public async Task<IActionResult> Index()
         {
-            var list = await _context.Cities.OrderBy(x => x.Name).ToListAsync();
+            var cities = await _context.Cities.OrderBy(x => x.Name).ToListAsync();
 
-            return View(list);
+            return View(cities);
         }
 
 

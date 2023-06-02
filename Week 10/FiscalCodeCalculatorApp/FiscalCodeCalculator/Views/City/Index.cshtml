@@ -10,7 +10,19 @@
     <a class="btn btn-primary mx-2" asp-action="Create">Aggiungi Città</a>
     <a class="btn btn-secondary mx-2" asp-controller="Home" asp-action="Index">Passa agli Utenti</a>
 </p>
-<table class="table">
+
+<label>
+    Scegli Provincia: 
+    <select onchange="cities()" id="province">
+        <option value=""></option>
+        @foreach (var pr in Model.DistinctBy(x => x.Province).OrderBy(x => x.Province))
+        {
+            <option value="@pr.Province">@pr.Province</option>
+        }
+    </select>
+</label>
+
+<table class="table" style="display: none">
     <thead>
         <tr>
             <th>
@@ -55,3 +67,24 @@
         }
     </tbody>
 </table>
+
+@section Scripts {
+    <script>
+
+
+        let pr = $("#province").val();
+
+        function cities() {
+
+            let xhttp = new XMLHttpRequest();
+
+            xhttp.onload = () => {
+                let res = JSON.parse(xhttp.responseText)
+            }
+
+            xhttp.open("get", "https://localhost:7198/api/cities/" + pr);
+            xhttp.send();
+        }
+
+    </script>
+}

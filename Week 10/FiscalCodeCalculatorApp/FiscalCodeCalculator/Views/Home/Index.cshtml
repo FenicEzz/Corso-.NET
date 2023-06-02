@@ -15,6 +15,9 @@
     <thead>
         <tr>
             <th>
+                @Html.DisplayNameFor(model => model.Id)
+            </th>
+            <th>
                 @Html.DisplayNameFor(model => model.Name)
             </th>
             <th>
@@ -42,6 +45,9 @@
         {
             <tr>
                 <td>
+                    @Html.DisplayFor(modelItem => item.Id)
+                </td>
+                <td>
                     @Html.DisplayFor(modelItem => item.Name)
                 </td>
                 <td>
@@ -66,3 +72,12 @@
         }
     </tbody>
 </table>
+
+@if (ViewBag.LastName == null && ViewBag.LastFC == null)
+{
+    <h5>Nessun utente registrato</h5>
+}
+else
+{
+    <h5>Ultimo utente registrato di nome: @ViewBag.LastName.ToUpper() che ha codice fiscale: @ViewBag.LastFC</h5>
+}
